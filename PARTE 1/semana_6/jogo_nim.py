@@ -33,7 +33,7 @@ def validar_partida():
         except ValueError:
             continue
         else:
-            if 1 <= m < n:
+            if 1 <= m <= n:
                 return n, m
             print('Valores inválidos para iniciar a partida!')
 
@@ -53,7 +53,7 @@ def partida():
         is_pc = func is computador_escolhe_jogada
         while True:
             pecas_retiradas = func(n, m)
-            if pecas_retiradas == 0 or pecas_retiradas > n or pecas_retiradas > m:
+            if pecas_retiradas == 0 or pecas_retiradas > n:
                 print('Oops! Jogada inválida! Tente de novo.')
                 continue
 
