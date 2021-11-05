@@ -1,4 +1,5 @@
 
+
 def alternar_jogada(*args):
     cache_jogada = list(args)
     cont = 0
