@@ -22,6 +22,9 @@ def usuario_escolhe_jogada(n, m):
         except ValueError:
             continue
         else:
+            if num_pecas == 0 or num_pecas > m:
+                print('Oops! Jogada inválida! Tente de novo.')
+                continue
             return num_pecas
 
 
@@ -53,10 +56,6 @@ def partida():
         is_pc = func is computador_escolhe_jogada
         while True:
             pecas_retiradas = func(n, m)
-            if pecas_retiradas == 0 or pecas_retiradas > n:
-                print('Oops! Jogada inválida! Tente de novo.')
-                continue
-
             n -= pecas_retiradas
             msg_jogada = 'O computador ' if is_pc else 'Você '
             msg_pecas = f'tirou uma peça.' if pecas_retiradas == 1 else f'tirou {pecas_retiradas} peças.'
