@@ -38,3 +38,5 @@ digite a altura: 2
 ##
 ##
 ```
+
+#Praticar tarefa de programação: Exercícios adicionais (opcionais)

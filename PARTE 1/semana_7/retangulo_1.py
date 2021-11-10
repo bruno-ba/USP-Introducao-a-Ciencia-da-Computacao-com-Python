@@ -1,6 +1,6 @@
 
 
-def gerar_retangul_1(largura:int, altura:int)->str:
+def gerar_retangul_1(largura:int, altura:int) -> str:
     for _ in range(altura):
         for _ in range(largura):
             print('#', end='')
